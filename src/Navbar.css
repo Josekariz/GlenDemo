@@ -1,0 +1,61 @@
+.navbar {
+    background-color: #333;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navbar-container {
+    max-width: 960px;
+    width: 100%;
+    padding: 0 20px;
+    margin: auto;
+  }
+  
+  .navbar-logo {
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    animation-name: colorChange;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  
+  .navbar-logo span {
+    margin-left: 5px;
+  }
+  
+  @keyframes colorChange {
+    0% {
+      color: white;
+    }
+    50% {
+      color: rgb(255, 0, 0);
+    }
+    100% {
+      color: rgb(0, 0, 255);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-logo {
+      animation-name: colorChangeMobile;
+    }
+  
+    @keyframes colorChangeMobile {
+      0% {
+        color: white;
+      }
+      50% {
+        color: rgb(255, 0, 0);
+      }
+      100% {
+        color: rgb(0, 0, 255);
+      }
+    }
+  }
+  
