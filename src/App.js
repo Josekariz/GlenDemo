@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import React from 'react';
+import Navbar from './navbar';
 import './App.css';
+import Footer from './footer';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Navbar/>
+      <div className="video-container">
+        <video className="background-video" autoPlay muted loop>
+          <source src="/pexels-george-morina-5962497 (1080p).mp4" type="video/mp4" />
+          {/* Provide fallback content for non-supporting browsers */}
+        </video>
+        <div className="centered-text">
+          Glen is this what you wanted<span role="img" aria-label="Cool Emoji" className="emoji">😎</span>
+        </div>
+      </div>
+      <Footer/>
     </div>
   );
 }
