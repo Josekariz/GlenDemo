@@ -17,7 +17,7 @@ const App = () => {
         </video>
         <div className="content-wrapper">
           <div className="centered-text">
-            Glen is this what you wanted
+            Glen is this what you want?
             <span role="img" aria-label="Cool Emoji" className="emoji">
               😎
             </span>
